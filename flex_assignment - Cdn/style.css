@@ -1,0 +1,335 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 3fr 0fr;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    /* border: 2px solid red; */
+}
+
+.header .box{
+    /* border: 1px solid green; */
+    height: 10vh;
+}
+
+.lines{
+    /* visibility: hidden; */
+    width: 30px;
+    height: 10px;
+    border-bottom: 2px solid white;
+}
+
+.more{
+    visibility: hidden;
+}
+
+.box img{
+    width: 70px;
+    height: 70px;
+}
+
+.contact_head{
+    margin-top: 4rem;
+   width: 100%;
+}
+
+.other a:active{
+    color: orange;
+}
+
+.other a:hover{
+    color: orange;
+}
+
+.other a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.other{
+    padding-left: 30%;
+}
+
+.reg{
+    background-color: royalblue;
+    padding: 10px;
+}
+.fa-magnifying-glass{
+    color: white;
+    background-color: inherit;
+}
+
+.congtacts_showbox{
+    margin-top: 5rem;
+    margin-left: 2rem;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-content: center;
+    
+}
+
+body{
+    background-color: lightyellow;
+    opacity: 1;
+}
+
+body li:first-child{
+   margin-bottom: 3rem;
+}
+
+.box1 li{
+    list-style-type: none;
+    line-height: 1.5rem;
+    align-content: center;
+    justify-content: center;
+   
+}
+
+.fa-phone{
+    color:pink;
+    /* background-color: inherit; */
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;  
+    text-align: center;  
+}
+
+.fa-envelope-open{
+    width: 60px;
+    height: 60px;
+    font-size: 3rem;
+    color: limegreen;
+}
+
+.fa-clock{
+    width: 60px;
+    height: 60px;
+    font-size: 3rem;
+    color: skyblue;
+}
+
+.box1 li:first-child{
+    background-color: rgba(200, 200, 200, 0.1);
+    width: 30%;
+    height: 80px;
+    padding-top: 5%;
+    padding-left: 7%;
+}
+
+.box1 li:nth-child(2){
+    margin-bottom: 1rem;
+    font-size: 2vw;
+    /* color: red; */
+    font-weight: bold;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.box2 img{
+    max-width: 100%;
+min-height: 5rem;
+}
+
+.form .box2 input{
+    margin-bottom: 2rem;
+    margin-top: 0.7rem;
+    width: 100%;
+    height: 2rem;
+}
+
+.redashta{
+    color: red;
+}
+
+.orangebut{
+    background-color: orange;
+    color: white;
+    padding: 1rem;
+    border: none;
+    margin-top: 3rem;
+}
+
+.box2 h1{
+    margin-bottom: 3rem;
+}
+
+.box2 textarea{
+    width: 100%;
+}
+
+
+
+@media (max-width:600px){
+.header{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+.contact_head{
+   width: 250%;
+}
+
+
+.congtacts_showbox{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+.box1{
+    margin-bottom: 2rem;
+}
+
+.box1 li{
+    width: 100%;
+    font-size: 6vw;
+}
+
+.box1 li:nth-child(2){
+    font-size: 6vw;
+}
+
+    .other{
+        visibility: hidden;
+    }
+
+    .more{
+        visibility: visible;
+        /* margin-left: -100px; */
+    }
+
+    /* .lines{
+        visibility: hidden;
+    } */
+
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .form{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+    }
+
+    .box2 label{
+        font-size: 8vw;
+    }
+
+    ::placeholder{
+        font-size: 6vw;
+    }
+
+    .orangebut{
+        font-size: 7vw;
+    }
+
+}
+
+
+
+
+@media (max-width:801px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 1rem;
+        width: 100%;
+    
+    }
+    
+    .contact_head{
+       width: 250%;
+       font-size: 5vw;
+    }
+    
+    .congtacts_showbox{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    
+    .box1{
+        margin-bottom: 2rem;
+    }
+    
+    .box1 li{
+        width: 100%;
+        font-size: 5vw;
+        line-height: 3rem;
+    }
+    
+    .box1 li:nth-child(2){
+        font-size: 6vw;
+    }
+    
+        .other{
+            visibility: hidden;
+        }
+    
+        .more{
+            visibility: visible;
+            /* margin-left: -100px; */
+        }
+    
+        html, body{
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+    
+        .form{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 5rem;
+        }
+
+        .box2 h1{
+            font-size: 7vw;
+        }
+
+        .form .box2 input{
+            margin-bottom: 2rem;
+            margin-top: 0.7rem;
+            width: 100%;
+            height: 6rem;
+        }
+    
+        .box2 label{
+            font-size: 6vw;
+        }
+    
+        ::placeholder{
+            font-size: 6vw;
+        }
+    
+        .orangebut{
+            font-size: 7vw;
+        }
+    
+    }
+    
+
+    
